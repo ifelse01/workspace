@@ -1,0 +1,35 @@
+Buildfile: file:///D:/workspaces/KernelClass2008/KernelClass2008.build
+Target framework: Microsoft .NET Framework 4.0
+Target(s) specified: build 
+
+ [property] Target framework changed to "Microsoft .NET Framework 3.5".
+
+clean:
+
+   [delete] Deleting directory 'D:\workspaces\KernelClass2008\bin'.
+
+KernelClass2008:
+
+      [csc] Compiling 32 files to 'D:\workspaces\KernelClass2008\bin\Debug\KernelClass2008.dll'.
+      [csc] d:\workspaces\KernelClass2008\DB\DALHelper.cs(231,36): error CS0161: “KernelClass.DALHelper.ExecuteReader(string)”: 并非所有的代码路径都返回值
+      [csc] d:\workspaces\KernelClass2008\DB\dtHelper.cs(141,30): warning CS0168: 声明了变量“ex”，但从未使用过
+      [csc] d:\workspaces\KernelClass2008\Mail\MailHelper.cs(56,13): warning CS0618: “System.Web.Mail.MailMessage”已过时:“The recommended alternative is System.Net.Mail.MailMessage. http://go.microsoft.com/fwlink/?linkid=14202”
+      [csc] d:\workspaces\KernelClass2008\Mail\MailHelper.cs(56,40): warning CS0618: “System.Web.Mail.MailMessage”已过时:“The recommended alternative is System.Net.Mail.MailMessage. http://go.microsoft.com/fwlink/?linkid=14202”
+      [csc] d:\workspaces\KernelClass2008\Mail\MailHelper.cs(61,35): warning CS0618: “System.Web.Mail.MailFormat”已过时:“The recommended alternative is System.Net.Mail.MailMessage.IsBodyHtml. http://go.microsoft.com/fwlink/?linkid=14202”
+      [csc] d:\workspaces\KernelClass2008\Mail\MailHelper.cs(76,17): warning CS0618: “System.Web.Mail.MailAttachment”已过时:“The recommended alternative is System.Net.Mail.Attachment. http://go.microsoft.com/fwlink/?linkid=14202”
+      [csc] d:\workspaces\KernelClass2008\Mail\MailHelper.cs(82,38): warning CS0618: “System.Web.Mail.MailAttachment”已过时:“The recommended alternative is System.Net.Mail.Attachment. http://go.microsoft.com/fwlink/?linkid=14202”
+      [csc] d:\workspaces\KernelClass2008\Mail\MailHelper.cs(96,13): warning CS0618: “System.Web.Mail.SmtpMail”已过时:“The recommended alternative is System.Net.Mail.SmtpClient. http://go.microsoft.com/fwlink/?linkid=14202”
+      [csc] d:\workspaces\KernelClass2008\Mail\MailHelper.cs(115,13): warning CS0618: “System.Web.Mail.MailMessage”已过时:“The recommended alternative is System.Net.Mail.MailMessage. http://go.microsoft.com/fwlink/?linkid=14202”
+      [csc] d:\workspaces\KernelClass2008\Mail\MailHelper.cs(115,40): warning CS0618: “System.Web.Mail.MailMessage”已过时:“The recommended alternative is System.Net.Mail.MailMessage. http://go.microsoft.com/fwlink/?linkid=14202”
+      [csc] d:\workspaces\KernelClass2008\Mail\MailHelper.cs(120,35): warning CS0618: “System.Web.Mail.MailFormat”已过时:“The recommended alternative is System.Net.Mail.MailMessage.IsBodyHtml. http://go.microsoft.com/fwlink/?linkid=14202”
+      [csc] d:\workspaces\KernelClass2008\Mail\MailHelper.cs(140,17): warning CS0618: “System.Web.Mail.MailAttachment”已过时:“The recommended alternative is System.Net.Mail.Attachment. http://go.microsoft.com/fwlink/?linkid=14202”
+      [csc] d:\workspaces\KernelClass2008\Mail\MailHelper.cs(146,38): warning CS0618: “System.Web.Mail.MailAttachment”已过时:“The recommended alternative is System.Net.Mail.Attachment. http://go.microsoft.com/fwlink/?linkid=14202”
+      [csc] d:\workspaces\KernelClass2008\Mail\MailHelper.cs(168,13): warning CS0618: “System.Web.Mail.SmtpMail”已过时:“The recommended alternative is System.Net.Mail.SmtpClient. http://go.microsoft.com/fwlink/?linkid=14202”
+
+BUILD FAILED
+
+D:\workspaces\KernelClass2008\KernelClass2008.build(24,10):
+External Program Failed: C:\Windows\Microsoft.NET\Framework64\v3.5\csc.exe (return code was 1)
+
+Total time: 2.2 seconds.
+

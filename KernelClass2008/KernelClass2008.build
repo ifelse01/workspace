@@ -1,0 +1,40 @@
+<project name="myproject" default="build" basedir=".">
+    <property name="nant.settings.currentframework" value="net-3.5" />
+    <!-- 编译结果 -->	
+	<property name="dir.dll" value="D:\workspaces\SupportDLL" />
+	<property name="dir.base" value="D:\workspaces\KernelClass2008" />
+    <property name="dir.code" value="${dir.base}" />
+    <property name="dir.bin" value="${dir.base}\bin" />
+    <property name="dir.debug" value="${dir.bin}\Debug" />
+    <property name="file.dll.KernelClass2008" value="${dir.debug}\KernelClass2008.dll" />
+        
+    <target name="build" depends="implement" />
+
+
+    <target name="implement" depends="clean, compile">
+    </target>
+
+    <target name="compile" depends="KernelClass2008" />
+
+    <target name="clean">
+        <delete dir="${dir.bin}" if="${directory::exists(dir.bin)}"/>
+    </target>
+
+    <target name="KernelClass2008">
+        <csc target="library" output="${file.dll.KernelClass2008}" debug="Full" optimize="true" define="TRACE" platform="AnyCPU" warninglevel="4" rebuild="true" filealign="512">
+           <sources>
+                <include name="${dir.code}\**\**.cs" />
+				<exclude name="${dir.code}\IISAdminHelper.cs" />
+           </sources>
+           <references>
+                <!--<include name="${dir.dll}\Microsoft.Web.Administration.dll" />-->
+           </references>
+        </csc>
+		<copy todir="D:\workspaces\SupportDLL" flatten="true">
+			<fileset>
+				<include name="${file.dll.KernelClass2008}" />
+			</fileset>
+		</copy>
+    </target>
+    <!--<astyle />-->
+</project>
